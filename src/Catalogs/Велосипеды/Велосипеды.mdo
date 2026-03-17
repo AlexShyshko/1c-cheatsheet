@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf56ec10-8f7c-4268-bd5b-1ef87d5ff602">
+  <producedTypes>
+    <objectType typeId="94d68c01-e9de-4f3e-bee1-20b0e7e5585a" valueTypeId="cb7185cc-ff06-4617-a033-aeee7e399397"/>
+    <refType typeId="575365f5-29fa-411c-a4b9-ed2793f0c048" valueTypeId="f522f3fd-a357-43fe-8ba6-8192063f3649"/>
+    <selectionType typeId="406d3e50-e9be-4681-b062-6289f53d6f42" valueTypeId="68448b70-57f7-402f-9ab2-438e5e280270"/>
+    <listType typeId="5bf9e038-f5ff-4f96-8204-75dac25d2059" valueTypeId="aed1e394-0a85-4657-819d-11af6f20c4de"/>
+    <managerType typeId="fbe3ea93-ea38-4aaf-8a04-109b01d71401" valueTypeId="cdf181b8-479a-44d2-9a18-475b9d09d566"/>
+  </producedTypes>
+  <name>Велосипеды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Велосипеды</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Велосипеды.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Велосипеды.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Велосипед</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="47f824e8-c30c-44bb-be9e-f3c3bd8052ef">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

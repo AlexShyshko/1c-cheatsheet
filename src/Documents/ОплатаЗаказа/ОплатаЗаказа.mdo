@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53725d82-1399-4320-9bc2-1b8aa23cb021">
+  <producedTypes>
+    <objectType typeId="1796fde5-4ea6-47b5-8465-ce7c8be690be" valueTypeId="a5145989-28e4-410a-87a4-df3503bfe9bb"/>
+    <refType typeId="543dde2a-58fa-4312-903f-782a8377fc52" valueTypeId="c8cb5301-5973-4df3-b2b3-f27f97e0f46b"/>
+    <selectionType typeId="52fe923d-f09e-406f-bde0-141e1545e714" valueTypeId="0efb2431-f84a-4e82-8409-339e5908c939"/>
+    <listType typeId="84a5230e-6d9b-47f4-a03d-6ef050358659" valueTypeId="25702fea-23eb-4ffe-a7f1-45dadc97ada0"/>
+    <managerType typeId="cd10eb4e-934e-44e9-b245-bf917be4695a" valueTypeId="da062862-5ee8-45aa-82b5-9735a4a7c4df"/>
+  </producedTypes>
+  <name>ОплатаЗаказа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оплата заказа</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОплатаЗаказа.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Оплаты заказов</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.НеоплаченныеЗаказы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="3659c455-8bd6-4554-8ca6-65de9b65e4f3">
+    <name>Курьер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курьер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Курьеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="97bf21dc-9906-4c72-b883-9a28caed5f3f">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Заказ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>
