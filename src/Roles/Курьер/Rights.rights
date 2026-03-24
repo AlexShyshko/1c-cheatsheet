@@ -197,11 +197,4 @@
 			<value>false</value>
 		</right>
 	</object>
-	<object>
-		<name>Document.Заказ.Attribute.Товар</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
 </Rights>

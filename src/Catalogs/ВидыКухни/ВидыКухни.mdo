@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84d1fdfa-e282-4533-9291-5188d0ff8f03">
+  <producedTypes>
+    <objectType typeId="35c9d491-9b60-47fb-adff-399d9b280210" valueTypeId="16365883-a9e3-490f-b8ba-c05b310cd7d6"/>
+    <refType typeId="65d3108c-fc11-4bf8-b237-e8d5fc6cabc0" valueTypeId="04e0aa4e-5085-456a-8586-daa9e1161f7f"/>
+    <selectionType typeId="ef416956-9542-4bd1-aa72-63ae6cd110be" valueTypeId="1a493acf-6b84-4057-9c6b-4cf278c8f5e9"/>
+    <listType typeId="dec3ebc1-3e0a-4831-a3b1-3f23da475246" valueTypeId="4777c942-9d43-4579-adb2-2274b0bf8cbc"/>
+    <managerType typeId="92426dd9-ef9d-43f5-9b2f-51fd4d7eb475" valueTypeId="a785c7c4-453c-4a6e-83b8-a136fd198c62"/>
+  </producedTypes>
+  <name>ВидыКухни</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды кухни</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыКухни.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ВидыКухни.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

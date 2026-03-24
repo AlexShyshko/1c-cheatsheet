@@ -27,6 +27,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Заказ.Form.ФормаЗаказа</defaultObjectForm>
   <registerRecords>AccumulationRegister.НеоплаченныеЗаказы</registerRecords>
   <registerRecords>AccumulationRegister.Продажи</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
@@ -63,22 +64,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="f9b7d6fd-0af9-4af6-a8a1-7a06bc9965ee">
-    <name>Товар</name>
-    <synonym>
-      <key>ru</key>
-      <value>Товар</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Меню</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="131dc7e5-a050-4836-ac35-789269a79f8d">
     <name>СуммаЗаказа</name>
     <synonym>
@@ -95,20 +80,106 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <templates uuid="d6794647-32b7-486e-b04c-1eccdc44886c">
-    <name>ЧекЗаказа</name>
-  </templates>
-  <commands uuid="ea71a669-13c3-458d-b3d7-7497eef3136a">
-    <name>ЧекЗаказа</name>
+  <forms uuid="a3fc1d29-c3f0-466a-9cef-fb1083391a77">
+    <name>ФормаЗаказа</name>
     <synonym>
       <key>ru</key>
-      <value>Чек заказа</value>
+      <value>Форма заказа</value>
     </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="297f0308-3f9e-4d9e-9ffa-6f9eb391d86e">
+    <producedTypes>
+      <objectType typeId="e91110f9-254f-4a1f-bdfb-b1db1938aa21" valueTypeId="b4c4a5a8-839d-490c-8d77-aaf2d8c0cc60"/>
+      <rowType typeId="5e9f4a4f-ab89-43b3-a45f-4cff71d75292" valueTypeId="d9298759-1b75-4847-88cd-76df5b7320f8"/>
+    </producedTypes>
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <attributes uuid="dccfacc8-7913-4117-9853-f464903100c5">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="15bd67dd-0d68-4bc7-a365-f9e911341bb3">
+      <name>ЦенаЗаЕдиницу</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена за единицу</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="46a9c70c-3d91-4ead-ae2d-714cf9af2ee7">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2382e72e-f960-49ee-9042-572633d69983">
+      <name>СуммаПозиции</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма позиции</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+  <templates uuid="22f6b51d-e1a9-484d-b355-485aa1ddb522">
+    <name>Печать</name>
+  </templates>
+  <commands uuid="a31c30e0-df98-4c53-a30f-8bab6f022f51">
+    <name>Печать</name>
     <group>FormCommandBarImportant</group>
     <commandParameterType>
       <types>DocumentRef.Заказ</types>

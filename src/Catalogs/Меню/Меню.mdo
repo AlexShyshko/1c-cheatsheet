@@ -59,4 +59,19 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="138231e8-f899-4917-ad42-78e42f542dad">
+    <name>ВидКухни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид кухни</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыКухни</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Catalog>

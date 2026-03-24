@@ -42,7 +42,7 @@
       <value>Товар</value>
     </synonym>
     <type>
-      <types>CatalogRef.Меню</types>
+      <types>CatalogRef.Номенклатура</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -5,6 +5,7 @@
 
 ## Содержание
 1. Справочники, документы, конструктор печати, регистры накопления, конструктор движений, контроль остатков, отчёты, роли - [ссылка](https://youtu.be/RmWnsF48z5w?si=b7avjf9GDQ4O-mG-)
+2. Номенклатура, формы справочника, регистры сведений, общие модули - [ссылка](https://youtu.be/HPrvD0pmODg?si=VuJvidXTht0XMku2)
 
 ## Ссылки
 - [Курс "Парк аттракционов"](https://www.youtube.com/playlist?list=PL5BQ2gzAdqWRiaSxeoaXmsWNBGidfpWag)

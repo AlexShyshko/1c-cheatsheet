@@ -34,6 +34,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultChoiceForm>Catalog.Велосипеды.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="47f824e8-c30c-44bb-be9e-f3c3bd8052ef">
     <name>СерийныйНомер</name>
     <synonym>
@@ -54,4 +55,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="8baf1846-0ad1-4d99-b793-6d60d3dcd369">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>
