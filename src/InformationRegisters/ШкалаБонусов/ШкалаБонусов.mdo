@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d42f5288-5402-40ff-ac0b-deecb8e32872">
+  <producedTypes>
+    <selectionType typeId="a927d799-7fa4-47fc-98ca-ddd83a9f8535" valueTypeId="d6da03f9-6230-43c2-b3c4-94c505e4c25a"/>
+    <listType typeId="864cc9e2-eb06-413b-9a4b-4d073e9e5b94" valueTypeId="631b748a-4bf8-4054-8a64-7bd29c155d04"/>
+    <managerType typeId="e36a89aa-a993-4514-a849-0c5c133af1f9" valueTypeId="3ad591c1-0ee4-49cf-b267-fa6ba31268d9"/>
+    <recordSetType typeId="53b9d35e-2a0b-4c78-9399-a215137a9ef1" valueTypeId="9bd4ad50-1cdb-484b-9099-874ced7b8080"/>
+    <recordKeyType typeId="68f7c206-cfae-4415-9c7f-3bceb09852e0" valueTypeId="8e167b67-49fc-4a19-af61-ae85e282eed3"/>
+    <recordType typeId="9c0652a7-03bb-4d18-a017-459be76bd847" valueTypeId="2cb875d5-1d02-44ef-82b2-c0b9e02228f4"/>
+    <recordManagerType typeId="5dd9ef50-f27f-453b-b1b3-da724afa9dd1" valueTypeId="f3947149-d2e0-4d26-a3d7-8a3a36fae65a"/>
+  </producedTypes>
+  <name>ШкалаБонусов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шкала бонусов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="43d31eee-42c4-4913-80da-7e1a0c0666c2">
+    <name>Шкала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шкала</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ШкалаБонусов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>

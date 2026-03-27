@@ -48,18 +48,24 @@
   <roles>Role.Курьер</roles>
   <roles>Role.МенеджерПриёмаЗаказов</roles>
   <commonModules>CommonModule.ЗапросыСКлиентаВызовСервера</commonModules>
+  <commonModules>CommonModule.КлиентСервер</commonModules>
+  <constants>Constant.МаксимальнаяДоляОплатыБаллами</constants>
   <catalogs>Catalog.Велосипеды</catalogs>
   <catalogs>Catalog.ВидыКухни</catalogs>
+  <catalogs>Catalog.Клиенты</catalogs>
   <catalogs>Catalog.Курьеры</catalogs>
   <catalogs>Catalog.Меню</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <documents>Document.Заказ</documents>
   <documents>Document.ОплатаЗаказа</documents>
   <documents>Document.УстановкаЦенНоменклатуры</documents>
+  <documents>Document.ШкалаБонусов</documents>
   <enums>Enum.ВидНоменклатуры</enums>
   <reports>Report.ПродажиПоТоварам</reports>
   <reports>Report.СтатистикаДоставок</reports>
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
+  <informationRegisters>InformationRegister.ШкалаБонусов</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.БонусныеБаллыКлиентов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.НеоплаченныеЗаказы</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
 </mdclass:Configuration>
