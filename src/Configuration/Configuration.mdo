@@ -47,8 +47,9 @@
   <roles>Role.Админ</roles>
   <roles>Role.Курьер</roles>
   <roles>Role.МенеджерПриёмаЗаказов</roles>
-  <commonModules>CommonModule.ЗапросыСКлиентаВызовСервера</commonModules>
-  <commonModules>CommonModule.КлиентСервер</commonModules>
+  <commonModules>CommonModule.ОбщийМодульВызовСервера</commonModules>
+  <commonModules>CommonModule.ОбщийМодульКлиент</commonModules>
+  <commonModules>CommonModule.ОбщийМодульКлиентСервер</commonModules>
   <constants>Constant.МаксимальнаяДоляОплатыБаллами</constants>
   <catalogs>Catalog.Велосипеды</catalogs>
   <catalogs>Catalog.ВидыКухни</catalogs>
@@ -63,6 +64,7 @@
   <enums>Enum.ВидНоменклатуры</enums>
   <reports>Report.ПродажиПоТоварам</reports>
   <reports>Report.СтатистикаДоставок</reports>
+  <dataProcessors>DataProcessor.РабочееМестоМенеджера</dataProcessors>
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <informationRegisters>InformationRegister.ШкалаБонусов</informationRegisters>
   <accumulationRegisters>AccumulationRegister.БонусныеБаллыКлиентов</accumulationRegisters>

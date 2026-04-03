@@ -45,6 +45,7 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -60,7 +61,6 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -76,7 +76,6 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -164,11 +163,12 @@
       <objectType typeId="e91110f9-254f-4a1f-bdfb-b1db1938aa21" valueTypeId="b4c4a5a8-839d-490c-8d77-aaf2d8c0cc60"/>
       <rowType typeId="5e9f4a4f-ab89-43b3-a45f-4cff71d75292" valueTypeId="d9298759-1b75-4847-88cd-76df5b7320f8"/>
     </producedTypes>
-    <name>Товар</name>
+    <name>ПозицииПродажи</name>
     <synonym>
       <key>ru</key>
-      <value>Товар</value>
+      <value>Позиции продажи</value>
     </synonym>
+    <fillChecking>ShowError</fillChecking>
     <attributes uuid="dccfacc8-7913-4117-9853-f464903100c5">
       <name>Товар</name>
       <synonym>
@@ -180,6 +180,7 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>

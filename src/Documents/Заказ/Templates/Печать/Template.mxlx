@@ -444,7 +444,7 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
-		<name>Товар</name>
+		<name>ПозицииПродажи</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>13</beginRow>
@@ -455,7 +455,7 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
-		<name>ТоварШапка</name>
+		<name>ПозицииПродажиШапка</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>11</beginRow>

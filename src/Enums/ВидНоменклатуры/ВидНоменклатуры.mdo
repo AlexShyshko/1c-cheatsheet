@@ -26,11 +26,4 @@
       <value>Услуга</value>
     </synonym>
   </enumValues>
-  <enumValues uuid="3ec25cfa-4e46-4caf-b3ea-f9fa1be0e6e3">
-    <name>ДоставкаЗаказов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Доставка заказов</value>
-    </synonym>
-  </enumValues>
 </mdclass:Enum>
