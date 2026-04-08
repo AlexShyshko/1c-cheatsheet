@@ -8,6 +8,7 @@
 2. Номенклатура, формы справочника, регистры сведений, общие модули - [ссылка](https://youtu.be/HPrvD0pmODg?si=VuJvidXTht0XMku2)
 3. Нормализация значения поля, расчёт скидки, программа лояльности на основе баллов, константы - [ссылка](https://youtu.be/2ByVD9dxnOA?si=YP9aVzZIwoP4UVqq)
 4. Табличные части, обработки, выгрузка информационной базы, обработчики событий формы обработки - [ссылка](https://youtu.be/UU8JpNZur-c?si=s6W7gRRyP2TnNzNZ)
+5. Перетаскивание строк, декорация, навигационная ссылка, динамический список, начальная страница - [ссылка](https://youtu.be/DKNpWfmFBPM?si=1SEU6AH5d6Y7u9dI)
 ## Ссылки
 - [Курс "Парк аттракционов"](https://www.youtube.com/playlist?list=PL5BQ2gzAdqWRiaSxeoaXmsWNBGidfpWag)
 - [Оригинальный репозиторий из видео](https://github.com/matvey-seregin/amusement-park/)
