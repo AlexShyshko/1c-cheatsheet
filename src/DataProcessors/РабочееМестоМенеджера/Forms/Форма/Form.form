@@ -782,6 +782,10 @@
       <items xsi:type="form:Table">
         <name>СписокНоменклатуры</name>
         <id>54</id>
+        <title>
+          <key>ru</key>
+          <value>Список номенклатуры</value>
+        </title>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -794,6 +798,10 @@
         <items xsi:type="form:FormField">
           <name>СписокНоменклатурыНоменклатура</name>
           <id>88</id>
+          <title>
+            <key>ru</key>
+            <value>Список номенклатуры</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -899,16 +907,56 @@
             <autoMaxHeight>true</autoMaxHeight>
           </extInfo>
         </items>
+        <items xsi:type="form:FormField">
+          <name>СписокНоменклатурыСсылка</name>
+          <id>114</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <for>
+              <role>Role.Админ</role>
+            </for>
+            <for>
+              <role>Role.Курьер</role>
+            </for>
+            <for>
+              <role>Role.МенеджерПриемаЗаказов</role>
+            </for>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СписокНоменклатуры.Ссылка</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>СписокНоменклатурыСсылкаРасширеннаяПодсказка</name>
+            <id>116</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокНоменклатурыСсылкаКонтекстноеМеню</name>
+            <id>115</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>LabelField</type>
+          <editMode>Auto</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:LabelFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+          </extInfo>
+        </items>
         <autoCommandBar>
           <name>СписокНоменклатурыКоманднаяПанель</name>
           <id>55</id>
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
-        <handlers>
-          <event>DragCheck</event>
-          <name>СписокНоменклатурыПроверкаПеретаскивания</name>
-        </handlers>
         <handlers>
           <event>Selection</event>
           <name>СписокНоменклатурыВыбор</name>
@@ -1363,8 +1411,12 @@
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>СписокНоменклатуры.ЭтоГруппа</segments>
     </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокНоменклатуры.Ссылка</segments>
+    </notDefaultUseAlwaysAttributes>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
+	СписокНоменклатуры.Ссылка КАК Ссылка,
 	СписокНоменклатуры.Ссылка КАК Номенклатура,
 	СписокНоменклатуры.КоличествоЗаказов КАК КоличествоЗаказов,
 	СписокНоменклатуры.ЭтоГруппа КАК ЭтоГруппа,

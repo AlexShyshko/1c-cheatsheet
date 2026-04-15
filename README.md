@@ -9,6 +9,7 @@
 3. Нормализация значения поля, расчёт скидки, программа лояльности на основе баллов, константы - [ссылка](https://youtu.be/2ByVD9dxnOA?si=YP9aVzZIwoP4UVqq)
 4. Табличные части, обработки, выгрузка информационной базы, обработчики событий формы обработки - [ссылка](https://youtu.be/UU8JpNZur-c?si=s6W7gRRyP2TnNzNZ)
 5. Перетаскивание строк, декорация, навигационная ссылка, динамический список, начальная страница - [ссылка](https://youtu.be/DKNpWfmFBPM?si=1SEU6AH5d6Y7u9dI)
+6. Ошибки конфигурации, строгая типизация, форматирование встроенного языка - [ссылка](https://youtu.be/v14iaxabnLY?si=BDN8dm-dnI6Z_zKP)
 ## Ссылки
 - [Курс "Парк аттракционов"](https://www.youtube.com/playlist?list=PL5BQ2gzAdqWRiaSxeoaXmsWNBGidfpWag)
 - [Оригинальный репозиторий из видео](https://github.com/matvey-seregin/amusement-park/)

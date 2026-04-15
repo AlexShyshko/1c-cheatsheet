@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c7955e7-8b7a-4b67-be23-3c181c5d33f5">
-  <name>МенеджерПриёмаЗаказов</name>
+  <name>МенеджерПриемаЗаказов</name>
   <synonym>
     <key>ru</key>
-    <value>Менеджер приёма заказов</value>
+    <value>Менеджер приема заказов</value>
   </synonym>
 </mdclass:Role>

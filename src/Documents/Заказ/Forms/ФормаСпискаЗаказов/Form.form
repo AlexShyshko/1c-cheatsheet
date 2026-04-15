@@ -402,10 +402,6 @@
     <autoFill>true</autoFill>
   </autoCommandBar>
   <handlers>
-    <event>ExternalEvent</event>
-    <name>ВнешнееСобытие</name>
-  </handlers>
-  <handlers>
     <event>NotificationProcessing</event>
     <name>ОбработкаОповещения</name>
   </handlers>

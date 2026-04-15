@@ -4,7 +4,56 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>Document.Заказ.Attribute.Цена</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.Заказ.Attribute.СуммаЗаказа</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.Заказ.TabularSection.ПозицииПродажи.Attribute.ЦенаЗаЕдиницу</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.Заказ.Attribute.БаллыНаСписание</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.Заказ.TabularSection.ПозицииПродажи.Attribute.СуммаПозиции</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.Заказ.TabularSection.ПозицииПродажи</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.Заказ.TabularSection.ПозицииПродажи.Attribute.Количество</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.Заказ.Attribute.Клиент</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -73,10 +122,6 @@
 		</right>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -176,6 +221,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.Заказ.TabularSection.ПозицииПродажи.Attribute.Товар</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Курьеры</name>
 		<right>
 			<name>Read</name>
@@ -192,6 +244,87 @@
 	</object>
 	<object>
 		<name>Document.Заказ.Attribute.Курьер</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты.Attribute.Телефон</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>

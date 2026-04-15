@@ -46,10 +46,10 @@
   </languages>
   <roles>Role.Админ</roles>
   <roles>Role.Курьер</roles>
-  <roles>Role.МенеджерПриёмаЗаказов</roles>
+  <roles>Role.МенеджерПриемаЗаказов</roles>
+  <commonModules>CommonModule.ОбщиеФункцииКлиентСервер</commonModules>
   <commonModules>CommonModule.ОбщийМодульВызовСервера</commonModules>
   <commonModules>CommonModule.ОбщийМодульКлиент</commonModules>
-  <commonModules>CommonModule.ОбщийМодульКлиентСервер</commonModules>
   <constants>Constant.МаксимальнаяДоляОплатыБаллами</constants>
   <catalogs>Catalog.Велосипеды</catalogs>
   <catalogs>Catalog.ВидыКухни</catalogs>
