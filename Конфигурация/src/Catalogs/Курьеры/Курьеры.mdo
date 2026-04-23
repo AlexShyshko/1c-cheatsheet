@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dcee5842-4b65-466a-9592-235aa38dc9e0">
+  <producedTypes>
+    <objectType typeId="718d4ace-89fa-4909-b328-9de9509c759c" valueTypeId="f2682c7c-8cc6-445d-bfd6-fae9f96563b9"/>
+    <refType typeId="3bf1cd97-c289-4962-bf4f-f32df96162d1" valueTypeId="268cf03a-831d-41fe-8654-d1ab7cc4f65f"/>
+    <selectionType typeId="4dd7f860-bef8-4fe8-96c1-46f7d79e5191" valueTypeId="5ae653cd-4450-4fc1-8011-1d3e9c2f4394"/>
+    <listType typeId="b05ec559-9717-4a43-b3ec-476f88d7a2c0" valueTypeId="e1391394-ce06-4ffb-9ff6-30e158f218a1"/>
+    <managerType typeId="a08c95b0-3edf-41f4-9145-01416519d491" valueTypeId="0159f3a1-64e8-4b8d-9483-76e242746b20"/>
+  </producedTypes>
+  <name>Курьеры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Курьеры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Курьеры.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Курьеры.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Курьер</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.Курьеры.Form.ФормаСпискаКурьеров</defaultListForm>
+  <attributes uuid="94a2b32a-21f9-4d59-8f03-e805a983cc1a">
+    <name>Тариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="f044221a-5762-4cc1-92a5-e02617f26f1c">
+    <name>ФормаСпискаКурьеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка курьеров</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

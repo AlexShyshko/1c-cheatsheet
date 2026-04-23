@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>СтатистикаДоставок</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответственный</dataPath>
+			<field>Ответственный</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоНеоплаченныхЗаказовНачальныйОстаток</dataPath>
+			<field>КоличествоНеоплаченныхЗаказовНачальныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>КоличествоНеоплаченныхЗаказов</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоНеоплаченныхЗаказовПриход</dataPath>
+			<field>КоличествоНеоплаченныхЗаказовПриход</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоНеоплаченныхЗаказовРасход</dataPath>
+			<field>КоличествоНеоплаченныхЗаказовРасход</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоНеоплаченныхЗаказовКонечныйОстаток</dataPath>
+			<field>КоличествоНеоплаченныхЗаказовКонечныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>КоличествоНеоплаченныхЗаказов</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОснованиеПлатежа</dataPath>
+			<field>ОснованиеПлатежа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоНеоплаченныхЗаказовОборот</dataPath>
+			<field>КоличествоНеоплаченныхЗаказовОборот</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеоплаченнаяСуммаЗаказовНачальныйОстаток</dataPath>
+			<field>НеоплаченнаяСуммаЗаказовНачальныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>НеоплаченнаяСуммаЗаказов</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеоплаченнаяСуммаЗаказовПриход</dataPath>
+			<field>НеоплаченнаяСуммаЗаказовПриход</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеоплаченнаяСуммаЗаказовРасход</dataPath>
+			<field>НеоплаченнаяСуммаЗаказовРасход</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеоплаченнаяСуммаЗаказовОборот</dataPath>
+			<field>НеоплаченнаяСуммаЗаказовОборот</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеоплаченнаяСуммаЗаказовКонечныйОстаток</dataPath>
+			<field>НеоплаченнаяСуммаЗаказовКонечныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>НеоплаченнаяСуммаЗаказов</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ДоставкиИОплатыОстаткиИОбороты.Ответственный КАК Ответственный,
+	ДоставкиИОплатыОстаткиИОбороты.КоличествоНеоплаченныхЗаказовНачальныйОстаток КАК
+		КоличествоНеоплаченныхЗаказовНачальныйОстаток,
+	ДоставкиИОплатыОстаткиИОбороты.КоличествоНеоплаченныхЗаказовОборот КАК КоличествоНеоплаченныхЗаказовОборот,
+	ДоставкиИОплатыОстаткиИОбороты.КоличествоНеоплаченныхЗаказовРасход КАК КоличествоНеоплаченныхЗаказовРасход,
+	ДоставкиИОплатыОстаткиИОбороты.КоличествоНеоплаченныхЗаказовПриход КАК КоличествоНеоплаченныхЗаказовПриход,
+	ДоставкиИОплатыОстаткиИОбороты.КоличествоНеоплаченныхЗаказовКонечныйОстаток КАК
+		КоличествоНеоплаченныхЗаказовКонечныйОстаток,
+	ДоставкиИОплатыОстаткиИОбороты.НеоплаченнаяСуммаЗаказовНачальныйОстаток КАК НеоплаченнаяСуммаЗаказовНачальныйОстаток,
+	ДоставкиИОплатыОстаткиИОбороты.НеоплаченнаяСуммаЗаказовОборот КАК НеоплаченнаяСуммаЗаказовОборот,
+	ДоставкиИОплатыОстаткиИОбороты.НеоплаченнаяСуммаЗаказовРасход КАК НеоплаченнаяСуммаЗаказовРасход,
+	ДоставкиИОплатыОстаткиИОбороты.НеоплаченнаяСуммаЗаказовПриход КАК НеоплаченнаяСуммаЗаказовПриход,
+	ДоставкиИОплатыОстаткиИОбороты.НеоплаченнаяСуммаЗаказовКонечныйОстаток КАК НеоплаченнаяСуммаЗаказовКонечныйОстаток,
+	ДоставкиИОплатыОстаткиИОбороты.Период КАК Период
+ИЗ
+	РегистрНакопления.ДоставкиИОплаты.ОстаткиИОбороты(,, День,,) КАК ДоставкиИОплатыОстаткиИОбороты</query>
+	</dataSet>
+	<totalField>
+		<dataPath>КоличествоНеоплаченныхЗаказовНачальныйОстаток</dataPath>
+		<expression>Сумма(КоличествоНеоплаченныхЗаказовНачальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоНеоплаченныхЗаказовОборот</dataPath>
+		<expression>Сумма(КоличествоНеоплаченныхЗаказовОборот)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоНеоплаченныхЗаказовРасход</dataPath>
+		<expression>Сумма(КоличествоНеоплаченныхЗаказовРасход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоНеоплаченныхЗаказовПриход</dataPath>
+		<expression>Сумма(КоличествоНеоплаченныхЗаказовПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоНеоплаченныхЗаказовКонечныйОстаток</dataPath>
+		<expression>Сумма(КоличествоНеоплаченныхЗаказовКонечныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НеоплаченнаяСуммаЗаказовНачальныйОстаток</dataPath>
+		<expression>Сумма(НеоплаченнаяСуммаЗаказовНачальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НеоплаченнаяСуммаЗаказовОборот</dataPath>
+		<expression>Сумма(НеоплаченнаяСуммаЗаказовОборот)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НеоплаченнаяСуммаЗаказовРасход</dataPath>
+		<expression>Сумма(НеоплаченнаяСуммаЗаказовРасход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НеоплаченнаяСуммаЗаказовПриход</dataPath>
+		<expression>Сумма(НеоплаченнаяСуммаЗаказовПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НеоплаченнаяСуммаЗаказовКонечныйОстаток</dataPath>
+		<expression>Сумма(НеоплаченнаяСуммаЗаказовКонечныйОстаток)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказы</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоНеоплаченныхЗаказовНачальныйОстаток</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заказов на начало дня</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоНеоплаченныхЗаказовОборот</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заказов в работе</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоНеоплаченныхЗаказовРасход</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заказов доставлено</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоНеоплаченныхЗаказовПриход</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заказов всего</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоНеоплаченныхЗаказовКонечныйОстаток</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заказов на конец дня</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Суммы</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НеоплаченнаяСуммаЗаказовНачальныйОстаток</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Неоплаченная сумма на начало дня</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НеоплаченнаяСуммаЗаказовОборот</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ожидаемая оплата</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НеоплаченнаяСуммаЗаказовРасход</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Проведённая оплата</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НеоплаченнаяСуммаЗаказовПриход</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Общая сумма заказов</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НеоплаченнаяСуммаЗаказовКонечныйОстаток</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Неоплаченная сумма на конец дня</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>86f88f67-b615-4b11-b4aa-e3367071cb11</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection/>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДЛФ=D</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:item xsi:type="dcsset:StructureItemChart">
+				<dcsset:name>Заказов всего</dcsset:name>
+				<dcsset:point>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+					</dcsset:conditionalAppearance>
+				</dcsset:point>
+				<dcsset:series>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Ответственный</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:series>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоНеоплаченныхЗаказовПриход</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заказов всего</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:ChartType">Column</dcscor:value>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ТипДиаграммы.ВидПодписей</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:ChartLabelType">SeriesPercent</dcscor:value>
+						</dcscor:item>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemChart">
+				<dcsset:name>Общая сумма заказов</dcsset:name>
+				<dcsset:point>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Ответственный</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>НеоплаченнаяСуммаЗаказовПриход</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Ответственный</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:point>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НеоплаченнаяСуммаЗаказовПриход</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Общая сумма заказов</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:ChartType">Pie</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Период</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Ответственный</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

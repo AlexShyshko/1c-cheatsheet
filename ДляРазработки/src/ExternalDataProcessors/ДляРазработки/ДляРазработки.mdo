@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49391c49-18eb-4d8d-95b6-7bf87071a2f0">
+  <producedTypes>
+    <objectType typeId="0b9a6b26-b432-4f65-b60f-dc3598871959" valueTypeId="91047d08-25ec-4695-b330-07aff886759c"/>
+  </producedTypes>
+  <name>ДляРазработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Для разработки</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="f1727e41-ee7e-4116-bc66-f00e4831f060"/>
+  <defaultForm>ExternalDataProcessor.ДляРазработки.Form.Разработка</defaultForm>
+  <attributes uuid="45f92dd7-d1dd-4d82-aeab-7f032df1ec3f">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="ace7729b-5554-4900-a41d-a2b2f0e60896">
+    <name>Разработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разработка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="37aee961-e896-4457-8750-55e9ec8c5a5b">
+    <name>ПрезидентыАмерики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Президенты америки</value>
+    </synonym>
+  </templates>
+  <templates uuid="c3dd5e80-ebf2-4ce1-9852-8922947c09c8">
+    <name>Теннисисты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Теннисисты</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="e19aa2e3-3a9c-44b9-a0fe-f12153ef0f33">
+    <name>Телефоны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефоны</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="4a3eea34-2cc2-4e27-be46-65754f43a34a">
+    <name>Велосипеды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Велосипеды</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ba67516d-6cd3-4b1a-9c63-d0a6c8cad65f">
+    <name>СерийныеНомераВелосипедов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийные номера велосипедов</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="1193442e-51da-4e87-a616-afa38d0b43dc">
+    <name>ВидыКухни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виды кухни</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="6efeeab3-a071-4a89-ad15-f542ba34620b">
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+  </templates>
+  <templates uuid="98a34d15-aed7-4889-89e7-3ddd260e02f8">
+    <name>Услуги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуги</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="d0495471-a52e-46a5-a5fb-a27c4fe5a6d5">
+    <name>ШкалаБонусов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шкала бонусов</value>
+    </synonym>
+  </templates>
+</mdclass:ExternalDataProcessor>
