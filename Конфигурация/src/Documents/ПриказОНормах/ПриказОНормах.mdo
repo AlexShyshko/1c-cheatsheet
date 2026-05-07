@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08a2125d-70fc-41c1-bb7c-6bf7959b2148">
+  <producedTypes>
+    <objectType typeId="91d838e8-64d2-4061-bcdc-48a5431d1d69" valueTypeId="faf82ab9-d400-4f26-be16-a7583be090d0"/>
+    <refType typeId="cc98b1f8-72b7-48c8-b18a-3cddea4a1bcf" valueTypeId="5faef6cf-6381-401a-92fe-f82dfe3c2e2f"/>
+    <selectionType typeId="96a6a57b-555a-4dea-bf60-7646e31a892d" valueTypeId="9f80575b-b3aa-43e9-91d2-416ff0fec7ad"/>
+    <listType typeId="c8ddb9dc-4264-4925-a5b7-1a8ad82714ce" valueTypeId="689fb3dd-801c-4685-a8bf-f1357109a187"/>
+    <managerType typeId="5051f7b6-9fc9-4065-88a7-939e2fe57d02" valueTypeId="9956f89f-f926-4a16-b9d8-5be9d6a32f3b"/>
+  </producedTypes>
+  <name>ПриказОНормах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приказ о нормах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриказОНормах.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Приказ о нормах</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПриказОНормах.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="7de715e1-0825-4394-80e0-81a394974c04">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="824ad7fa-dea9-4812-b1ec-a065a68c87b9">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="d6a70b68-d6a0-4e2e-959f-9fe5ab921391">
+    <producedTypes>
+      <objectType typeId="45438bfc-b39b-4a00-8b48-5963c22877e3" valueTypeId="6dbb665f-9260-4bcd-9e0a-e852d42be157"/>
+      <rowType typeId="493a810b-6d83-4a21-a2b4-2f494012b1ae" valueTypeId="9a71954b-0b53-48c2-8615-42d13be6366b"/>
+    </producedTypes>
+    <name>ТабличнаяЧасть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная часть</value>
+    </synonym>
+    <attributes uuid="721a7018-cd2c-4348-b3b9-792406f0470f">
+      <name>ВидДоговора</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид договора</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+          <fixed>true</fixed>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0d73ca7d-8edb-4da6-ad5a-d0d2772e0e88">
+      <name>Договор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+          <fixed>true</fixed>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1e217b32-aeeb-44e8-b728-da8c7aa3f1d6">
+      <name>Страна</name>
+      <synonym>
+        <key>ru</key>
+        <value>Страна</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+          <fixed>true</fixed>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="eb24c618-779e-438a-95bf-c62632e991ca">
+      <name>Услуга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Услуга</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+          <fixed>true</fixed>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f29b7d19-8eff-4e0b-b058-63f57f19ab3a">
+      <name>Норма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Норма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

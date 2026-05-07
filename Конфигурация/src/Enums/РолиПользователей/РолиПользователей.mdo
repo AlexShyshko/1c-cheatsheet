@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42d8ff7b-66dc-4e82-aedb-79bacd963413">
+  <producedTypes>
+    <refType typeId="3a3d843a-cc08-47e5-a422-3ba1c19e4ef1" valueTypeId="460d9c43-7fe6-49c3-831c-9f2bea632284"/>
+    <listType typeId="d867a33c-1cf7-406a-9a70-8454686ee8a9" valueTypeId="6d8e7c59-43d1-4245-b815-d970896bf5ca"/>
+    <managerType typeId="f829432d-d985-4efa-a5ae-71350aeda840" valueTypeId="13a79389-741c-493e-9e1e-480f7965042c"/>
+  </producedTypes>
+  <name>РолиПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли пользователей</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4de3f0dc-cdfe-4b21-9a23-41e8e4b8a9fd">
+    <name>Админ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Админ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e562304c-99d5-4077-8d9a-ce6e82a6b9ca">
+    <name>Курьер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курьер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9491057e-6d3b-425d-90b2-7494fda5b74c">
+    <name>МенеджерПриемаЗаказов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджер приема заказов</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

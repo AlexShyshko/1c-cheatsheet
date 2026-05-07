@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6ecf8d54-477d-44a7-9efb-b2b763a4a2f8">
+  <producedTypes>
+    <objectType typeId="ab162aba-157d-4f4b-8765-d7af5c34561c" valueTypeId="d9d84b0b-d329-40b1-bb6f-828dc6d035ef"/>
+    <refType typeId="76bfacd4-bb91-450f-9c63-2158a781152f" valueTypeId="3263b93a-51e4-47cb-8ce6-2b547c8abede"/>
+    <selectionType typeId="64b4298e-1fb8-46d6-a340-3c911833f7ed" valueTypeId="79a479d3-0cd4-405b-8fbd-0fffe1759991"/>
+    <listType typeId="0776f42d-105e-4970-82a4-149a220c88b0" valueTypeId="33ce5406-c309-4b60-98fd-dff1fae97231"/>
+    <managerType typeId="481411e0-4fc3-4957-99a9-577ea08320c2" valueTypeId="471edd66-4775-4917-9cb5-2d767acec909"/>
+  </producedTypes>
+  <name>Пользователи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пользователи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Пользователи.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Пользователь</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Пользователи.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="606ccc68-6162-4b6c-b264-47f4fc95a8b0">
+    <name>ИдентификаторПользователяИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор пользователя ИБ</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="716e0473-3c60-4022-9d02-2fc07993086a">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

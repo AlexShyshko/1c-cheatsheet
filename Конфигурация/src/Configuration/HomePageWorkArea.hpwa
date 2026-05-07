@@ -3,17 +3,10 @@
   <workingAreaTemplate>TwoColumnsEqualWidth</workingAreaTemplate>
   <columns>
     <items>
-      <form>DataProcessor.РабочееМестоМенеджера.Form.Форма</form>
+      <form>DataProcessor.ПланированиеОтпуска.Form.Форма</form>
       <height>10</height>
       <visibility>
         <common>true</common>
-        <for>
-          <role>Role.Курьер</role>
-        </for>
-        <for>
-          <value>true</value>
-          <role>Role.Админ</role>
-        </for>
       </visibility>
     </items>
   </columns>

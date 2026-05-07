@@ -101,4 +101,12 @@
       <value>Шкала бонусов</value>
     </synonym>
   </templates>
+  <templates uuid="dedbb5a6-b4bf-4d7c-9995-64bb1e7dff0b">
+    <name>Адреса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адреса</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
 </mdclass:ExternalDataProcessor>

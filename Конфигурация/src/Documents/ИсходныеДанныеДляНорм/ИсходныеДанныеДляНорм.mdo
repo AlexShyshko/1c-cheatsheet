@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13880891-ffff-4584-b88d-49e0cb8de992">
+  <producedTypes>
+    <objectType typeId="472b2f7f-2d72-4403-9ff2-45ff83d30c6f" valueTypeId="45cf6e83-b21b-48cb-9cae-7869f6f3ef53"/>
+    <refType typeId="a1ef4a28-02b6-42b9-b188-7a7cf3302b58" valueTypeId="0b15d61b-be64-48f2-89ae-f90e4315492b"/>
+    <selectionType typeId="63af118f-8478-4934-b4bd-b5a6a2073f69" valueTypeId="448a1a9c-d8fe-4971-9c83-43c5e28128a2"/>
+    <listType typeId="414d6cd1-fcc8-4493-bb58-fe577983d456" valueTypeId="e95e0985-bef7-41ab-9481-ac57775b7b0c"/>
+    <managerType typeId="d2059554-d427-4135-97e7-ada933229554" valueTypeId="71d741af-c236-4ddf-91ed-aa223126a397"/>
+  </producedTypes>
+  <name>ИсходныеДанныеДляНорм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исходные данные для норм</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ИсходныеДанныеДляНорм.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Исходные данные для норм</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ИсходныеДанныеДляНорм.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="47369106-aa99-4b6b-a7f4-cbcf9d940153">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="54024269-48b4-47fe-b15a-2e737182a852">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="bd77a8d5-2250-4131-a714-fdc196b963d6">
+    <producedTypes>
+      <objectType typeId="68b2e3c2-6b97-48b3-b57e-8ad53b94a529" valueTypeId="70d52bca-de43-4b7d-8a42-2da614423cfe"/>
+      <rowType typeId="4bea8107-1a0b-47ca-a6d7-bc781d889ae7" valueTypeId="b4db6cdc-b7f0-4eb0-9e20-070eaa3055d7"/>
+    </producedTypes>
+    <name>ТабличнаяЧасть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная часть</value>
+    </synonym>
+    <attributes uuid="e368295f-deec-4737-8c10-8618b0babb40">
+      <name>ВидДоговора</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид договора</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+          <fixed>true</fixed>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d6d6ae0d-2120-4030-a1fd-5f4309332122">
+      <name>Договор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+          <fixed>true</fixed>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7948f1bb-645f-4072-a89b-900cf7f208b5">
+      <name>Страна</name>
+      <synonym>
+        <key>ru</key>
+        <value>Страна</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+          <fixed>true</fixed>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2fb59e45-d160-4cb9-beeb-a3a345209937">
+      <name>Услуга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Услуга</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+          <fixed>true</fixed>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2c9864fb-a769-4e88-bc55-498aace7abbf">
+      <name>ОжидаемаяНорма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ожидаемая норма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b6761290-45a0-4402-85ef-c544704c785c">
+      <name>РассчитаннаяНорма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Рассчитанная норма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

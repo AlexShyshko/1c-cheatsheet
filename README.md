@@ -11,6 +11,7 @@
 5. Перетаскивание строк, декорация, навигационная ссылка, динамический список, начальная страница - [ссылка](https://youtu.be/DKNpWfmFBPM?si=1SEU6AH5d6Y7u9dI)
 6. Ошибки конфигурации, строгая типизация, форматирование встроенного языка - [ссылка](https://youtu.be/v14iaxabnLY?si=BDN8dm-dnI6Z_zKP)
 7. Проект внешней обработки, макеты, генерация тестовых данных, диаграммы - [ссылка](https://youtu.be/ogW81miNKL8?si=8RPVxqmSTJHlIxMP)
+8. Управление пользователями, параметры сеанса, модуль сеанса, диаграмма Ганта - [ссылка](https://youtu.be/aHNKgtXEPmw?si=a7yWabchqot9pLYe)
 ## Ссылки
 - [Курс "Парк аттракционов"](https://www.youtube.com/playlist?list=PL5BQ2gzAdqWRiaSxeoaXmsWNBGidfpWag)
 - [Оригинальный репозиторий из видео](https://github.com/matvey-seregin/amusement-park/)

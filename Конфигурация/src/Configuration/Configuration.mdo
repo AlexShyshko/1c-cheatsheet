@@ -44,6 +44,7 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <sessionParameters>SessionParameter.ТекущийПользователь</sessionParameters>
   <roles>Role.Админ</roles>
   <roles>Role.Курьер</roles>
   <roles>Role.МенеджерПриемаЗаказов</roles>
@@ -56,14 +57,21 @@
   <catalogs>Catalog.Клиенты</catalogs>
   <catalogs>Catalog.Курьеры</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
   <documents>Document.Заказ</documents>
+  <documents>Document.ИсходныеДанныеДляНорм</documents>
   <documents>Document.ОплатаЗаказа</documents>
+  <documents>Document.ПланированиеОтпуска</documents>
+  <documents>Document.ПриказОНормах</documents>
   <documents>Document.УстановкаЦенНоменклатуры</documents>
   <documents>Document.ШкалаБонусов</documents>
   <enums>Enum.ВидНоменклатуры</enums>
+  <enums>Enum.РолиПользователей</enums>
   <reports>Report.ПродажиПоТоварам</reports>
   <reports>Report.СтатистикаДоставок</reports>
+  <dataProcessors>DataProcessor.ПланированиеОтпуска</dataProcessors>
   <dataProcessors>DataProcessor.РабочееМестоМенеджера</dataProcessors>
+  <informationRegisters>InformationRegister.ПлановыеОтпуска</informationRegisters>
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <informationRegisters>InformationRegister.ШкалаБонусов</informationRegisters>
   <accumulationRegisters>AccumulationRegister.БонусныеБаллыКлиентов</accumulationRegisters>
